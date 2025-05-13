@@ -6,7 +6,8 @@
 1) Склонируйте репозиторий.
 2) Выполните миграции `manage.py migrate`
 3) Создайте superuser'a - `manage.py createsuperuser` (root, root)
-4) Перейдя по сслыке http://127.0.0.1:8000/admin, создайте таблицу "main menu" или любое другое название
+4) Запустите сервер `manage.py runserver`
+4) Перейдя по сслыке http://127.0.0.1:8000/admin, создайте меню "main_menu" или любое другое название
 5) Перейдите в /templates/tree_menu/home.html и вставьте свой шаблон. при этом подключите templatetags _{% load menu_tags %}_
 6) Втавьте в свой шаблон _{% draw_menu 'main_menu' %}_, лтбо просто создайте меню через админку и увидите его на главном меню.
 
